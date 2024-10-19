@@ -1,0 +1,25 @@
+<div class="mainContainer">
+    
+    <app-menu-dashboard></app-menu-dashboard>
+
+    <div id="centralDashboard">
+        <div class="rowDashboard">
+            
+            <div id="meteoContainer">
+                <div class="dashBoardBlocContainer">
+                    <app-meteo-dashboard></app-meteo-dashboard>
+                </div>
+            </div>
+            
+            <div id="nbrTasks">
+                <div id="nbrTasksContainer" class="dashBoardBlocContainer">
+                    <span id="nbrTasksContainerTitle">TASKS UNDONE</span>
+                    <span id="nbrTasksContainerNbr">{{ nbrTasks }}</span>
+                </div>
+            </div>  
+        </div>
+        <div id="tasksContainer" class="dashBoardBlocContainer">
+            <app-tasks-dashboard></app-tasks-dashboard>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+
+<!-- Bouton dark/light mode à droite du menu placement immobile (centered au moment de la réduction d'écran) -->
+
+<div class="menuDashboardMember r1">
+
+    <div [ngClass]="{'active': activeLink === 0}" (click)="goTo('/', 0)">
+        <span class="IconLink material-symbols-outlined">dashboard</span>
+        <span class="textLink">Dashboard</span>
+    </div>
+    <div [ngClass]="{'active': activeLink === 1}" (click)="goTo('/', 1)">
+        <span class="IconLink material-symbols-outlined">cloud</span>
+        <span class="textLink">Meteo</span>
+    </div>
+    <div [ngClass]="{'active': activeLink === 2}" (click)="goTo('/', 2)">
+        <span class="material-symbols-outlined IconLink">splitscreen</span>
+        <span class="textLink">Tasks</span>
+    </div>
+    <div [ngClass]="{'active': activeLink === 3}" (click)="goTo('/', 3)">
+        <span class="IconLink material-symbols-outlined">event</span>
+        <span class="textLink">Calendar</span>
+    </div>
+    <div [ngClass]="{'active': activeLink === 4}" (click)="goTo('/', 4)">
+        <span class="IconLink material-symbols-outlined">settings</span>
+        <span class="textLink">Settings</span>
+    </div>
+
+</div>
+
+<div class="menuDashboardMember r2">
+    <div (click)="goTo('/', 0)">
+        <span class="IconLink material-symbols-outlined">logout</span>
+        <span class="textLink">Logout</span>
+    </div>
+</div>
+
