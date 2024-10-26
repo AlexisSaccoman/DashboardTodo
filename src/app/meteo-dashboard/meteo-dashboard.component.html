@@ -1,5 +1,19 @@
 
-<h3 class="meteo_city">{{ meteoData.name }}</h3>
-<img src="" alt="img_meteo">
-<span class="weather_desc">{{ meteoData.weather.main }}</span>
-<span class="weather_temp">{{ meteoData.main.temp }}°K</span>
+
+
+<img [ngClass]="{'disabled': loading==false}" src="assets/gif/Dual Ring@1x-2.0s-200px-200px.gif" alt="loading" id="meteoNotFound">
+<div id="meteoFound" [ngClass]="{'disabled': loading==true}">
+    <h3 class="meteo_city">{{ meteoData.name }}</h3>
+    <span class="weather_icon material-symbols-outlined">{{icon_meteo}}</span>
+    <div class="weather_info">
+        <div class="weather_info_temp blocInfo">
+            <span class="weather_info_temp_icon material-symbols-outlined">thermostat</span>
+            <span class="weather_info_temp_text">{{ temp }}°K</span>
+        </div>
+        <div class="weather_info_wind blocInfo">
+            <span class="weather_info_wind_icon material-symbols-outlined">air</span>
+            <span class="weather_info_wind_text">{{ meteoData.wind.speed }} m/s</span>
+        </div>
+    </div>
+</div>
+

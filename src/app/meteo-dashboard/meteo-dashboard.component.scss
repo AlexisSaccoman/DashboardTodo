@@ -1,0 +1,55 @@
+
+#meteoFound{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.meteo_city{
+    margin-top: 30px;
+    font-size: 25px;
+    text-align:center;
+}
+
+.weather_icon{
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+.weather_info{
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    & .blocInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_temp{
+        
+    }
+    
+    &_wind{
+    
+    }
+}
+
+
+.disabled{
+    display: none;
+
+    & > * {
+        display: none;
+    }
+}
+

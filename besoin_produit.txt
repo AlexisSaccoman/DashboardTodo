@@ -1,0 +1,49 @@
+
+
+Affichage Dashboard (Accueil) : 
+- tâches du jour
+- nombre de tâches du jour
+- météo du jour (peut influer sur les potentiels trajets, tâches...)
+- icône météo de l'api (https://openweathermap.org/img/wn/{codeWeather}@2x.png)
+
+
+Affichage Meteo :
+- Affichage plus complet de la météo (autres data, évolution sur la journée ? ...)
+
+
+Affichage Tasks : 
+- Affichage plus complets des tâches à faire
+- Affichage des différentes listes de tâches
+--> interface de navigation dans les tâches + listes
+
+
+Affichage Calendar : 
+- permet de voir toutes les tâches dans un calendrier avec les tâches sur leur jour de rendu (si tâche importante -> changer la couleur)
+- nombre en bulle pour tâches du jour importantes
+- couleur de tâches en fonction de l'état (done/undone)
+
+
+Affichage Mail (Api Gmail ?) :
+- affichage d'une interface de boite mail
+
+
+Affichage Settings :
+- Permet de changer la couleur des fonds (rose, vert...)
+- Paramétrer en automatique/manuel la prise de position pour calcul de la météo
+- extraire l'agenda des tâches en fichier .ics (pour importation dans un google agenda...)
+
+
+Serveur Node : 
+- Sert de couche intermédiaire (interface) entre service Angular et API OpenWeather
+
+DB - MySQL (Maria DB) : 
+- table de tâches
+- table de liste de tâches
+- TODO : champ state en boolean (0 si undone / 1 si done)
+
+
+Interfaçage :
+- écran large (natural)
+- écran medium (réorganisation des blocs d'affichage + menu en icônes)
+- écran small (réorganisation des blocs d'affichage + menu horizontal en bas de l'écran)
+- écran smartphone (réorganisation des blocs d'affichage + menu horizontal en bas de l'écran + ajustement des marges/tailles et des polices)
